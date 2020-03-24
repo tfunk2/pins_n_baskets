@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  disc_golf_course: one
+  course_condition: 1
+  difficulty_rating: 1
+  things_liked: MyText
+  things_disliked: MyText
+
+two:
+  user: two
+  disc_golf_course: two
+  course_condition: 1
+  difficulty_rating: 1
+  things_liked: MyText
+  things_disliked: MyText

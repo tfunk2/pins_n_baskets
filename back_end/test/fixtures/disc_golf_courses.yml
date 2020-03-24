@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  number_of_holes: 1
+  par: 1
+  length: 1
+  terrain: MyString
+
+two:
+  name: MyString
+  location: MyString
+  number_of_holes: 1
+  par: 1
+  length: 1
+  terrain: MyString

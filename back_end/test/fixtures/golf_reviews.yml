@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  golf_course: one
+  fairway_rating: 1
+  green_rating: 1
+  course_condition: 1
+  things_liked: MyText
+  things_disliked: MyText
+
+two:
+  user: two
+  golf_course: two
+  fairway_rating: 1
+  green_rating: 1
+  course_condition: 1
+  things_liked: MyText
+  things_disliked: MyText

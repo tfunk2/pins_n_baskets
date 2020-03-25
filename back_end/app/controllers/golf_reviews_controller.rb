@@ -19,7 +19,7 @@ class GolfReviewsController < ApplicationController
             things_liked: params[:things_liked],
             things_disliked: params[:things_disliked]
         )
-        render json: @new_golf_review
+        redirect_to 'http://localhost:3001'
     end
 
     def update
@@ -33,14 +33,13 @@ class GolfReviewsController < ApplicationController
             things_liked: params[:things_liked],
             things_disliked: params[:things_disliked]
         )
-        message = "Golf Review Updated"
-        render json: message
+        redirect_to 'http://localhost:3001'
     end
 
     def destroy
         found_golf_review = GolfReview.find(params[:id])
         @deleted_user = found_golf_review.destroy
-        message = "Golf Review Deleted."
-        render json: message
+
+        redirect_to 'http://localhost:3001'
     end
 end

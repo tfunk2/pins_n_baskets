@@ -11,20 +11,18 @@ class UsersController < ApplicationController
 
     def create
         @new_user = User.create(username: params[:username], display_name: params[:display_name])
-        render json: @new_user
+        redirect_to 'http://localhost:3001'
     end
 
     def update
         found_user = User.find(params[:id])
         @updated_user = found_user.update(username: params[:username], display_name: params[:display_name])
-        message = "User Updated."
-        render json: message
+        redirect_to 'http://localhost:3001'
     end
 
     def destroy
         found_user = User.find(params[:id])
         deleted_user = found_user.destroy
-        message = "User Deleted."
-        render json: message
+        redirect_to 'http://localhost:3001'
     end
 end

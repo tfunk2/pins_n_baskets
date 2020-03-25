@@ -94,12 +94,14 @@ function displayDiscGolfReviews(disc_golf_reviews) {
             // Creating HTML elements for us to change into information
             const discGolfReviewHeader = document.createElement('h2')
             const discGolfReviewCourseCondition = document.createElement('h3')
+            const discGolfReviewDifficultyRating = document.createElement('h3')
             const discGolfReviewThingsLiked = document.createElement('h3')
             const discGolfReviewThingsDisliked = document.createElement('h3')
 
             // Changes the 4 constants above into relevant disc golf review attributes
             discGolfReviewHeader.innerText = `Review #${disc_golf_review_counter} - ${disc_golf_review.disc_golf_course.name}`
             discGolfReviewCourseCondition.innerText = `Course Condition (1-10): ${disc_golf_review.course_condition}`
+            discGolfReviewDifficultyRating.innerText = `Difficulty Rating: ${disc_golf_review.difficulty_rating}`
             discGolfReviewThingsLiked.innerText = `Things Liked: ${disc_golf_review.things_liked}`
             discGolfReviewThingsDisliked.innerText = `Things Disliked: ${disc_golf_review.things_disliked}`
 
@@ -108,6 +110,7 @@ function displayDiscGolfReviews(disc_golf_reviews) {
                 discGolfReviewHeader,
                 discGolfReviewDate,
                 discGolfReviewCourseCondition,
+                discGolfReviewDifficultyRating,
                 discGolfReviewThingsLiked,
                 discGolfReviewThingsDisliked
                 )

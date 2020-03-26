@@ -1,3 +1,9 @@
+body {
+    background-image: url("https://www.cullenlinksgolf.co.uk/wp-content/uploads/sites/5851/2016/07/12th-Signature-hole-filtered-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 input[type=text] {
     width: 350px;
     padding: 14px 20px;
@@ -11,7 +17,7 @@ input[type=text] {
 input[type=submit] {
     width: 350px;
     background-color: #4CAF50;
-    color: white;
+    color: papayawhip;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -52,9 +58,65 @@ textarea {
     border-radius: 6px;
     box-sizing: border-box;
 }
+#first-form-section {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /* justify-content: space-between; */
+}
+
+#second-form-section {
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    margin-top: 20px;
+} 
 
 #golf-review-form {
+    border-color: papayawhip;
+    border-style: solid;
+    border-radius: 10px ;
+    border-width: 5px;
+    margin: 5px;
+    padding: 10px;
+    margin-right: 70px;
+
+}
+
+#disc-golf-review-form {
+    border-color: papayawhip;
+    border-style: solid;
+    border-radius: 10px ;
+    border-width: 5px;
+    margin: 5px;
+    padding: 10px;
+    margin-left: 70px;
+}
+#disc-golf-review-header {
+    color: navy;
     display: flex;
     justify-content: center;
+    padding: -5px;
+
+}
+#golf-review-header {
+    color: navy;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 60px;
+}
+
+#logo-2 {
+    height: 110px;
+    position: absolute;
+    width: 110px;
+}
+
+#username-input {
+    display: flex;
     flex-direction: column;
+    padding-left: 540px;
 }

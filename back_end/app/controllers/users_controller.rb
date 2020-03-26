@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
     def create
         @new_user = User.create(username: params[:username], display_name: params[:display_name])
-        redirect_to 'http://localhost:3001'
+        redirect_to 'http://localhost:3001/reviewFormPage.html'
     end
 
     def update

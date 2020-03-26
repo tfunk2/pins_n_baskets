@@ -28,7 +28,7 @@ function displayDiscGolfReview(disc_golf_review) {
 
     discGolfReviewUser.innerHTML = `Name: <a href="userReviewsIndex.html?id=${disc_golf_review.user.id}">${disc_golf_review.user.display_name}</a>`
 // Would like to make the line below a link to a golf_course show page
-    discGolfReviewCourse.innerText = `Disc Golf Course: ${disc_golf_review.disc_golf_course.name}`
+    discGolfReviewCourse.innerHTML = `Disc Golf Course: <a href="showDiscGolfCourse.html?id=${disc_golf_review.disc_golf_course.id}">${disc_golf_review.disc_golf_course.name}</a>`
     discGolfReviewCourseCondition.innerText = `Course Condition (1-10): ${disc_golf_review.course_condition}`
     discGolfDifficultyRating.innerText = `Difficulty Rating (1-10): ${disc_golf_review.difficulty_rating}`
     discGolfReviewThingsLiked.innerText = `Things Liked: ${disc_golf_review.things_liked}`

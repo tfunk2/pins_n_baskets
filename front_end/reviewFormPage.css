@@ -1,0 +1,60 @@
+input[type=text] {
+    width: 350px;
+    padding: 14px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 350px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+input[list=username-data-list], 
+input[list=golf-course-data-list], 
+input[list=username-data-list-dg], 
+input[list=disc-golf-course-data-list] {
+    width: 350px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 125px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 350px;
+    height: 125px;
+    padding: 10px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#golf-review-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

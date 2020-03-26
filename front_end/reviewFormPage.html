@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Review!</title>
+    <script defer src="reviewFormPage.js"></script>
+</head>
+<body>
+
+    <h1>Create a course review!</h1>
+
+    <h2>Create a username if you haven't already!</h2>
+    <form action="http://localhost:3000/users" method="POST" autocomplete="off">
+        <section>
+            <input type="text" name="username" placeholder="Username">
+        </section>
+        <section>
+            <input type="text" name="display_name" placeholder="Display name">
+        </section>
+        <section>
+            <input type="submit" value="Create user">
+        </section>
+    </form>
+
+    <h2>Create a golf course review!</h2>
+    <form id="golf-review-form" action="http://localhost:3000/golf_reviews" method="POST">
+        <section>
+            <input list="username-data-list" id="username-search-filter" name="user_id" placeholder="username"/>
+                <datalist id="username-data-list"></datalist>
+        </section>
+        <section>
+            <input list="golf-course-data-list" id="golf-course-search-filter" name="golf_course_id" placeholder="golf course"/>
+                <datalist id="golf-course-data-list"></datalist>
+        </section>
+        <section class="golf-rating">
+            <select name="fairway_rating" id="fairway-rating-dropdown">
+                <option value="no rating provided">fairway rating</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </section>
+        <section class="golf-rating">
+            <select name="green_rating" id="green-rating-dropdown">
+                <option value="no rating provided">green rating</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </section>
+        <section class="golf-rating">
+            <select name="course_condition" id="course-condition-dropdown">
+                <option value="no rating provided">course condition</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </section>
+        <section>
+            <textarea placeholder="What you liked about this course..." name="things_liked" rows="10"></textarea>
+        </section>
+        <section>
+        <textarea placeholder="The things you didn't care for..." name="things_disliked" rows="10"></textarea>
+        </section>
+        <section>
+            <input type="submit" value="submit golf course review">
+        </section>
+    </form>
+
+    <h2>Create a disc golf course review!</h2>
+    <form action="http://localhost:3000/disc_golf_reviews" method="POST">
+        <section>
+            <input list="username-data-list-dg" id="username-search-filter-dg" name="user_id" placeholder="username"/>
+                <datalist id="username-data-list-dg"></datalist>
+        </section>
+        <section>
+            <input list="disc-golf-course-data-list" id="disc-golf-course-search-filter" name="disc_golf_course_id" placeholder="disc golf course"/>
+                <datalist id="disc-golf-course-data-list"></datalist>
+        </section>
+        <section class="golf-rating">
+            <select name="course_condition" id="course-condition-dropdown">
+                <option value="no rating provided">course condition</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </section>
+        <section class="golf-rating">
+            <select name="difficulty_rating" id="difficulty-rating-dropdown">
+                <option value="no rating provided">difficulty rating</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+        </section>
+        <section>
+            <textarea placeholder="What you liked about this course..." name="things_liked" rows="10"></textarea>
+        </section>
+        <section>
+        <textarea placeholder="The things you didn't care for..." name="things_disliked" rows="10"></textarea>
+        </section>
+        <section>
+            <input type="submit" value="submit disc golf course review">
+        </section>
+    </form>
+
+</body>
+<link rel="stylesheet" href="reviewFormPage.css">
+</html>

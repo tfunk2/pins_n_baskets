@@ -7,12 +7,10 @@
     <script defer src="reviewFormPage.js"></script>
 </head>
 <body>
-
-    <h1>Create a course review!</h1>
-
-    <h2>Create a username if you haven't already!</h2>
-    <form action="http://localhost:3000/users" method="POST" autocomplete="off">
-        <section>
+    <section id="first-form-section">
+        <img id="logo-2" src="computer-icons-golf-hole-png-clip-art.png" alt="logo">
+    <form id="username-input" action="http://localhost:3000/users" method="POST" autocomplete="off">
+        <section id="page-two-input-section">
             <input type="text" name="username" placeholder="Username">
         </section>
         <section>
@@ -22,11 +20,16 @@
             <input type="submit" value="Create user">
         </section>
     </form>
+</section>
 
-    <h2>Create a golf course review!</h2>
+    <!-- <h2>Create a golf course review!</h2> -->
+    <!-- <label id="label1">golf</label> -->
+    <section id="second-form-section">
     <form id="golf-review-form" action="http://localhost:3000/golf_reviews" method="POST">
+        <h2 id="golf-review-header">Golf Review</h2>
         <section>
             <input list="username-data-list" id="username-search-filter" name="user_id" placeholder="username"/>
+
                 <datalist id="username-data-list"></datalist>
         </section>
         <section>
@@ -89,8 +92,9 @@
         </section>
     </form>
 
-    <h2>Create a disc golf course review!</h2>
-    <form action="http://localhost:3000/disc_golf_reviews" method="POST">
+    <!-- <h2>Create a disc golf course review!</h2> -->
+    <form id="disc-golf-review-form" action="http://localhost:3000/disc_golf_reviews" method="POST">
+        <h2 id="disc-golf-review-header">Disc Golf Review</h2>
         <section>
             <input list="username-data-list-dg" id="username-search-filter-dg" name="user_id" placeholder="username"/>
                 <datalist id="username-data-list-dg"></datalist>
@@ -139,6 +143,7 @@
             <input type="submit" value="submit disc golf course review">
         </section>
     </form>
+</section>
 
 </body>
 <link rel="stylesheet" href="reviewFormPage.css">

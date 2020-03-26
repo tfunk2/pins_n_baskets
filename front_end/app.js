@@ -9,7 +9,7 @@ function displayGolfReviews(golf_reviews) {
         const golfReviewHeader = document.createElement('h3')
         golfReviewHeader.innerHTML = 
             `<a href="showGolfReview.html?id=${golf_review.id}">${golf_review.golf_course.name} - ${golf_review.user.username}</a>`
-        golfReviewsSection.prepend(golfReviewHeader)
+        golfReviewsSection.append(golfReviewHeader)
     })
 }
 
@@ -24,6 +24,6 @@ function displayDiscGolfReviews(disc_golf_reviews) {
         const discGolfReviewHeader = document.createElement('h3')
         discGolfReviewHeader.innerHTML = 
             `<a href="showDiscGolfReview.html?id=${disc_golf_review.id}">${disc_golf_review.disc_golf_course.name} - ${disc_golf_review.user.username}</a>`
-        discGolfReviewsSection.prepend(discGolfReviewHeader)
+        discGolfReviewsSection.append(discGolfReviewHeader)
     })
 }

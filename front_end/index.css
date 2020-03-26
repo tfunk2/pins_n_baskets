@@ -1,3 +1,8 @@
 body {
     background-image: url("https://wallpaperplay.com/walls/full/9/a/0/116086.jpg");
 }
+
+#logo {
+    width: 50px;
+    height: 50px;
+}

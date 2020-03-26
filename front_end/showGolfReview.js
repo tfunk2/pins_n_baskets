@@ -29,7 +29,7 @@ function displayGolfReview(golf_review) {
 
     golfReviewUser.innerHTML = `Name: <a href="userReviewsIndex.html?id=${golf_review.user.id}">${golf_review.user.display_name}</a>`
 // Would like to make the line below a link to a golf_course show page
-    golfReviewCourse.innerText = `Golf Course: ${golf_review.golf_course.name}`
+    golfReviewCourse.innerHTML = `Golf Course: <a href="showGolfCourse.html?id=${golf_review.golf_course.id}">${golf_review.golf_course.name}</a>`
     golfReviewFairwayRating.innerText = `Fairway Rating (1-10): ${golf_review.fairway_rating}`
     golfReviewGreenRating.innerText = `Green Rating (1-10): ${golf_review.green_rating}`
     golfReviewCourseCondition.innerText = `Course Condition (1-10): ${golf_review.course_condition}`

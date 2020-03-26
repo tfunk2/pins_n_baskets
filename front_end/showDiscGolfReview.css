@@ -1,3 +1,39 @@
 body {
-    background-image: url('https://i.imgur.com/NDCDXa4.jpg');
+    background-image: url("https://eagleoutside.com/wp-content/uploads/2015/06/fairgrounds-disc-golf-course.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+#disc-golf-review-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-color: papayawhip;
+    border-style: solid;
+    border-radius: 10px ;
+    border-width: 5px;
+    color: papayawhip;
+    margin: 5px;
+    padding: 10px;
+    margin-top: 200px;
+    width: 500px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+
+#logo-3 {
+    display: flex;
+    justify-content: flex-start;
+    height: 110px;
+    width: 110px;
+}
+
+#hi {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 250px;
+
 }

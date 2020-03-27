@@ -8,7 +8,7 @@ function displayGolfReviews(golf_reviews) {
     golf_reviews.forEach(golf_review => {
         const golfReviewHeader = document.createElement('h3')
         golfReviewHeader.innerHTML = 
-            `<a href="showGolfReview.html?id=${golf_review.id}">${golf_review.golf_course.name} - ${golf_review.user.username}</a>`
+            `<a class="review-link" href="showGolfReview.html?id=${golf_review.id}">${golf_review.golf_course.name} - ${golf_review.user.username}</a>`
         golfReviewsSection.append(golfReviewHeader)
     })
 }
@@ -23,7 +23,7 @@ function displayDiscGolfReviews(disc_golf_reviews) {
     disc_golf_reviews.forEach(disc_golf_review => {
         const discGolfReviewHeader = document.createElement('h3')
         discGolfReviewHeader.innerHTML = 
-            `<a href="showDiscGolfReview.html?id=${disc_golf_review.id}">${disc_golf_review.disc_golf_course.name} - ${disc_golf_review.user.username}</a>`
+            `<a class="review-link" href="showDiscGolfReview.html?id=${disc_golf_review.id}">${disc_golf_review.disc_golf_course.name} - ${disc_golf_review.user.username}</a>`
         discGolfReviewsSection.append(discGolfReviewHeader)
     })
 }

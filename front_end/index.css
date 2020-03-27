@@ -12,6 +12,8 @@ h1 {
     color: palegoldenrod;
     display: flex;
     justify-content: center;
+    font-family: Palatino;
+    font-weight: 450;
 }
 
 #logo {
@@ -68,6 +70,28 @@ h3 {
 #button:hover {
     cursor: pointer;
 /* make button larger? */
+}
+
+.review-link {
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+a:link {
+    color: navy;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+a:active {
+    color: #009933;
 }
 
 /* notes- first page-

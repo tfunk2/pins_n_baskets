@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="reviewFormPage.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a Review!</title>
-    <script defer src="reviewFormPage.js"></script>
 </head>
 <body>
     <section id="first-form-section">
-        <img id="logo-2" src="computer-icons-golf-hole-png-clip-art.png" alt="logo">
-    <form id="username-input" action="http://localhost:3000/users" method="POST" autocomplete="off">
-        <section id="page-two-input-section">
-            <input type="text" name="username" placeholder="Username">
-        </section>
-        <section>
-            <input type="text" name="display_name" placeholder="Display name">
-        </section>
-        <section>
-            <input type="submit" value="Create user">
-        </section>
-    </form>
+        <a href="http://localhost:3001/">
+            <img id="logo-2" src="computer-icons-golf-hole-png-clip-art.png" alt="logo">
+        </a>
+        <form id="username-input" action="http://localhost:3000/users" method="POST" autocomplete="off">
+            <section id="page-two-input-section">
+                <input type="text" name="username" placeholder="Username">
+            </section>
+            <section>
+                <input type="text" name="display_name" placeholder="Display name">
+            </section>
+            <section>
+                <input type="submit" value="Create user">
+            </section>
+        </form>
 </section>
 
     <!-- <h2>Create a golf course review!</h2> -->
@@ -146,5 +148,5 @@
 </section>
 
 </body>
-<link rel="stylesheet" href="reviewFormPage.css">
+<script src="reviewFormPage.js"></script>
 </html>

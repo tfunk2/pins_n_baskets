@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://www.cullenlinksgolf.co.uk/wp-content/uploads/sites/5851/2016/07/12th-Signature-hole-filtered-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo-6 {
+  height: 150px;
+  width: 150px;
+}
+
+#golf-course-section {
+  opacity: .8;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-color: papayawhip;
+  border-style: solid;
+  border-radius: 10px ;
+  border-width: 5px;
+  color: navy;
+  margin: 5px;
+  margin-top: 50px;
+  width: 420px;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}

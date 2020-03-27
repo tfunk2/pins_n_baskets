@@ -1,8 +1,57 @@
-h1 {
-    background-color: green;
+body {
+    background-image: url("https://www.cullenlinksgolf.co.uk/wp-content/uploads/sites/5851/2016/07/12th-Signature-hole-filtered-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #golf-review-date {
     font-family: monospace;
     font-size: 20px;
+}
+
+#logo-7 {
+    height: 150px;
+    width: 150px;
+}
+#user-golf-reviews-section {
+    opacity: .8;
+  background-color: papayawhip;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  border-color: papayawhip;
+  border-style: solid;
+  border-radius: 10px ;
+  border-width: 5px;
+  color: navy;
+  margin: 5px;
+  margin-top: 100px;
+  width: 420px;
+  margin-left: 250px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+
+#user-disc-golf-reviews-section {
+    opacity: .8;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-color: papayawhip;
+    border-style: solid;
+    border-radius: 10px ;
+    border-width: 5px;
+    color: navy;
+    margin: 5px;
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 420px;
+    /* margin-left: 550px; */
+    margin-bottom: 100px;
+}
+
+#bigboi {
+    display: flex;
+
 }

@@ -7,6 +7,8 @@ body {
 }
 
 #disc-golf-review-section {
+    opacity: .8;
+    background-color: papayawhip;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,7 +16,7 @@ body {
     border-style: solid;
     border-radius: 10px ;
     border-width: 5px;
-    color: papayawhip;
+    color: navy;
     margin: 5px;
     padding: 10px;
     margin-top: 200px;
